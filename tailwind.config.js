@@ -4,14 +4,17 @@ module.exports = {
   ],
   theme: {
     extend: {
- 
-      colors:theme => ({
+      spacing: {
+        '0.1': '0.063rem'
+      },
+
+      colors: theme => ({
         'brand-color': '#4c3398',
-        'primary-brand-color':'#5d3ebc',
-        'secondary-brand-color':'#7849f7',
-        'barand-yellow':'#ffd300'
+        'primary-brand-color': '#5d3ebc',
+        'secondary-brand-color': '#7849f7',
+        'barand-yellow': '#ffd300'
       })
-      
+
     },
   },
   plugins: [],
