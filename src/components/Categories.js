@@ -5,7 +5,6 @@ import Category from '../ui/Category';
 import Title from '../ui/Title';
 
 
-
 export default function Catecories() {
   const [cotegories, setCategories] = useState([]);
 
