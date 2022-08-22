@@ -75,7 +75,7 @@ export default function HeroSelection() {
                     </div>
                     <button className="bg-barand-yellow mt-3 h-12 flex items-center justify-center rounded-md w-full font-semibold  text-primary-brand-color hover:bg-primary-brand-color hover:text-barand-yellow transition-colors">Telefon numarası ile devam et</button>
                     <hr className="h-[1px] my-2 bg-gray-300" />
-                    <button className="bg-blue-700 bg-opacity-10 text-blue-700 text-opacity-80 mt-3 h-12 flex items-center  rounded-md w-full font-semibold   hover:text-primary-brand-color transition-colors">
+                    <button className="bg-blue-700 bg-opacity-10 text-blue-700 text-opacity-80 mt-3 h-12 flex items-center  rounded-md w-full font-semibold   hover:text-blue-400 transition-colors">
                         <FaFacebookSquare size={20} className=" ml-5" />
                         <span className="mx-auto">Facebooks ile devam et</span>
 
