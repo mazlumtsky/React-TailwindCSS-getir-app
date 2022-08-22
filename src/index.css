@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
+
+body {
+  margin: 0;
+  font-family: 'open-sans',sans-serif;
+  @apply antialiased;
+}
+
+
+.flag-select{
+  @apply !pb-0;
+}
+
+.flag-select button{
+  @apply h-14 border-2 transition-colors border-gray-200 hover:border-primary-brand-color
+}
+.flag-select button > span span:nth-child(2){
+   @apply text-sm pl-2
+}
