@@ -79,7 +79,7 @@ export default function Campaigns() {
   };
 
   return (
-    <div className='container mx-auto 2xl:px-32  md:pt-8'>
+    <div className='container mx-auto md:px-14 lg-24 2xl:px-28 md:pt-8'>
       <div className='hidden md:block'>
         <Title>Kapanyalar</Title>
       </div>
