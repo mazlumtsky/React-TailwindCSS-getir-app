@@ -13,7 +13,7 @@ export default function Favorites() {
   }, [])
   
   return (
-    <div>
+    <div className='px-32 mx-auto container' >
       <Title>Favoriler</Title>
       <div className='grid grid-cols-8 gap-0.1 bg-white rounded-lg overflow-hidden'> 
         {products.length && products.map((product,index)=> <ProdauctItems key={index}  product={product}/> )}

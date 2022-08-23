@@ -46,7 +46,7 @@ export default function Campaigns() {
   };
 
   return (
-    <div className='container mx-auto py-8'>
+    <div className='container mx-auto px-32 py-8'>
       <Title>Kapanyalar</Title>
       <Slider className='-mx-2' {...settings} >
          {benners.length && benners.map((banner,index)=>(

@@ -10,15 +10,15 @@ export default function Catecories() {
 
   useEffect(() => {
     // apiye istek gönderDİK
-      setCategories(categoryData);
+    setCategories(categoryData);
   }, []);
   return (
-    <div className='bg-white py-4'>
-
+    <div className='  mb-4 px-32 container mx-auto py-5 '>
       <div className='container mx-auto'>
-        <Title>Kategoriler</Title>
+        <h3 className='ml-16'></h3> 
+        <Title className="">Kategoriler</Title>
         <div className='grid grid-cols-10 '>
-          
+
           {cotegories && cotegories.map((category, index) => <Category key={index} category={category} />)}
         </div>
       </div>

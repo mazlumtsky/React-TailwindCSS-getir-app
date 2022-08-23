@@ -15,17 +15,26 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <Header/>
-      <HeroSelection/>
-      <Categories/>
-      <Campaigns/>
-      <div className='container mx-auto'>
-      <Favorites/>
-      <MobileApp/>
-      <Card/>
+      <Header />
+      <HeroSelection />
+      <Categories />
+      <div className='bg-slate-100'>
+        <Campaigns />
+        <Favorites />
+        <MobileApp />
+        <Card />
       </div>
+      <Footer />
 
-      <Footer/>
+
+
+
+
+
+
+
+
+
     </>
   );
 }

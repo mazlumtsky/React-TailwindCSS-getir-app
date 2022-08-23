@@ -13,8 +13,8 @@ export default function Card() {
     
 
   return (
-    <div>
-      <div className='grid grid-cols-3'>
+    <div className='container mx-auto px-32'>
+      <div className='grid grid-cols-3 gap-x-4'>
         {cards.length && cards.map((card,index)=> <Cardss key={index} card={card}/>)}
       </div>
     </div>
