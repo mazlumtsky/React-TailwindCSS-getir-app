@@ -42,17 +42,53 @@ export default function Campaigns() {
     speed: 500,
     autoplaySpeed: 3500,
     nextArrow: <NextBtn />,
-    prevArrow: <PrevBtn />
+    prevArrow: <PrevBtn />,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          arrows:false,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          arrows:false,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows:false,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   };
 
   return (
-    <div className='container mx-auto px-32 py-8'>
-      <Title>Kapanyalar</Title>
-      <Slider className='-mx-2' {...settings} >
+    <div className='container mx-auto 2xl:px-32  md:pt-8'>
+      <div className='hidden md:block'>
+        <Title>Kapanyalar</Title>
+      </div>
+      
+      <Slider className='md:-mx-2' {...settings} >
          {benners.length && benners.map((banner,index)=>(
           <div key={index}>
             <div className='mx-2'>
-             <img src={banner.image} className='rounded-lg'/> 
+             <img src={banner.image} className='md:rounded-lg'/> 
             </div>
             
           </div>

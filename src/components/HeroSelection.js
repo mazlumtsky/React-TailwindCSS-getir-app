@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import Slider from "react-slick";
 import { FaFacebookSquare } from 'react-icons/fa';
+import {useWindowWidth} from '@react-hook/window-size/throttled'
+    
+    
+   
+  
 
 export default function HeroSelection() {
+    const WindowWidth = useWindowWidth()
+
     const [selected, setSelected] = useState('TR');
     const phones = {
         US: '+1',
@@ -29,8 +36,8 @@ export default function HeroSelection() {
     };
 
     return (
-        <div className="relative h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:indent-0 before:w-full  before:z-10 before:h-full" >
-            <Slider {...settings} >
+        <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:indent-0 before:w-full  before:z-10 before:h-full" >
+            {WindowWidth >= 768 &&  <Slider {...settings} >
                 <div>
                     <h3>
                         <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg"></img>
@@ -48,16 +55,16 @@ export default function HeroSelection() {
                     </h3>
                 </div>
 
-            </Slider>
-            <div className="container flex justify-between items-center px-32 absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
-                <div>
+            </Slider>}
+            <div className="md:container flex justify-between items-center relative md:px-14 lg:px-24 2xl:px-32  md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
+                <div className="hidden md:block">
                     <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"></img>
 
-                    <h3 className="mt-8 font-semibold text-4xl text-white">Dakikalar içinde<br />kapınızda <br /> </h3>
+                    <h3 className="mt-8 font-semibold sm:text-2xl lg:text-4xl text-white">Dakikalar içinde<br />kapınızda <br /> </h3>
                 </div>
 
 
-                <div className="w-[400px] rounded-lg bg-gray-50 p-6 ">
+                <div className="w-full md:w-[400px] md:rounded-lg bg-gray-50 p-6 ">
                     <h4 className="text-primary-brand-color text-center font-semibold mb-4 ">Giriş yap veya kayıt ol</h4>
                     <div className="flex gap-x-2">
                         <ReactFlagsSelect
