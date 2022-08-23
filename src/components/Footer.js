@@ -70,8 +70,8 @@ export default function Footer() {
 
   return (
     <div className='bg-white mt-10'>
-      <div className='container mx-auto px-32'>
-        <div className='grid grid-cols-4 pt-10'>
+      <div className='container mx-auto px-10 md:px-24 lg:px-28'>
+        <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4  pt-10'>
           <section>
             <nav className='grid gap-y-3'>
               <h6 className='text-primary-brand-color text-lg'>Getir'i indirin!</h6>
@@ -95,7 +95,7 @@ export default function Footer() {
               Bilgi Toplumu Hizmetleri
             </a>
           </div>
-          <nav className=" flex gap-x-3">
+          <nav className="flex gap-x-3">
             <a href="#" className="  text-gray-500 hover:bg-purple-100 hover:text-primary-brand-color h-10 w-11 items-center justify-center flex transition-all rounded-lg">
               <BsFacebook size={21} />
             </a>
