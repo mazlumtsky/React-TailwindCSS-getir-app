@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MobileApp() {
   return (
-    <div className='container mx-auto  md:px-14 lg:px-24 2xl:px-28'>
+    <div className='container mx-auto  md:px-14 lg:px-24 xl:28 2xl:px-32'>
 
     <div className='bg-primary-brand-color bg-mobile-app flex items-center justify-between rounded-md text-white mt-7'>
       <div className='flex flex-col gap-y-3 p-10'>

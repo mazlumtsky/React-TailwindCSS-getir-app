@@ -71,7 +71,7 @@ export default function Footer() {
 
   return (
     <div className='bg-white   mt-10'>
-      <div className='container mx-auto px-10 md:px-24 lg:px-28'>
+      <div className='container mx-auto px-10 md:px-24 lg:px-28 2xl:px-32'>
         <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4  pt-10'>
           <section>
             <nav className='grid gap-y-3'>

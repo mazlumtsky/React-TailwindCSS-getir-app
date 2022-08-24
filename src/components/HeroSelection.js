@@ -56,7 +56,7 @@ export default function HeroSelection() {
                 </div>
 
             </Slider>}
-            <div className="md:container flex justify-between items-center relative md:px-14 lg:px-24 2xl:px-32  md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
+            <div className="md:container flex justify-between items-center relative md:px-14 lg:px-24 xl:px-28 2xl:px-32  md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
                 <div className="hidden md:block">
                     <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"></img>
 
