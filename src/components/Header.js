@@ -4,7 +4,7 @@ import { FaUser, FaUserPlus } from 'react-icons/fa';
 
 export default function Header() {
   return (
-    <div className="bg-brand-color md:fixed top-0 left-0 right-0 z-30 ">
+    <div className="bg-brand-color">
       <div className="container mx-auto px-32  h-16 md:h-10 flex items-center justify-center  md:justify-between ">
 
         <a href="#" className="">
