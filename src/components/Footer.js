@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from '../ui/Menu';
 import { BsFacebook, BsTwitter, BsGlobe, BsInstagram } from 'react-icons/bs'
+import { Collapse } from 'react-collapse';
 export default function Footer() {
 
 
@@ -69,7 +70,7 @@ export default function Footer() {
 
 
   return (
-    <div className='bg-white mt-10'>
+    <div className='bg-white   mt-10'>
       <div className='container mx-auto px-10 md:px-24 lg:px-28'>
         <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4  pt-10'>
           <section>
@@ -88,14 +89,14 @@ export default function Footer() {
           </section>
           {menus.map((menu, index) => <Menu key={index} {...menu} />)}
         </div>
-        <div className="flex justify-between items-center mt-4 p-6  border-t border-gray-200 py-6">
+        <div className="flex  flex-col md:flex-row gap-y-2 justify-between items-center mt-4 p-6  border-t border-gray-200 py-6">
           <div className="text-gray-600">
             &copy; 2022 Getir
             <a href="#" className="text-primary-brand-color ml-2">
               Bilgi Toplumu Hizmetleri
             </a>
           </div>
-          <nav className="flex gap-x-3">
+          <nav className="flex  gap-x-3">
             <a href="#" className="  text-gray-500 hover:bg-purple-100 hover:text-primary-brand-color h-10 w-11 items-center justify-center flex transition-all rounded-lg">
               <BsFacebook size={21} />
             </a>
